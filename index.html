@@ -10,33 +10,7 @@
 <h2>聯絡簿</h2> 
 <hr/>
 <img src="IMG_3328.JPG" style="width: 500px;" class="box"/>
-<script>
-// 變數宣告
-var target = 704;
-var number = 0;
-var times = 0;
-var bugs = 403;
-// 無窮迴圈
-do {
-    number = window.prompt("請輸入密碼！");
-    // 離開無窮迴圈
-    if (number == null || number == target)
-        break;
-    // 判斷是太大或太小
-    if (number > target ) {
-        alert(number + "錯誤!")
-        times++;
-        continue;
-    }
-    else
-        if (number != target) {
-            alert(number + "錯誤!")
-            times++;
-            continue;
-        }       
-} while (true);
-if (number == null)
-   document.write("網頁錯誤:"+bugs + "<br/>");
+
 else {
     let url = "IMG_3328.JPG";
     fetch(url)
