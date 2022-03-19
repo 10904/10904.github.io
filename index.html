@@ -11,18 +11,5 @@
 <hr/>
 <img src="IMG_3328.JPG" style="width: 500px;" class="box"/>
 
-else {
-    let url = "IMG_3328.JPG";
-    fetch(url)
-    .then((response) => {
-    return response.blob();
-  })
-  .then((imageBlob) => {
-    let img = document.getElementById('result');
-    img.src = URL.createObjectURL(imageBlob);
-  })
-}   
-</script>
-<!-- <img id="result" class="box"> -->
 </body>
 </html>
