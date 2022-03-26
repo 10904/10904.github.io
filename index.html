@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>連結試算表 - 表單Form</title>
+    <title>聯絡簿照片上傳</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -84,9 +84,7 @@
 
         function getValues() {
 
-            var name = document.getElementById("name");
-            var email = document.getElementById("email");
-            var comments = document.getElementById("comments");
+            var photo = document.getElementById("photo");
 
             var rowData = {
                 name: name.value,
@@ -99,7 +97,7 @@
             // 清除表單上的資料
             document.getElementById("myForm").reset();
             // 完成後的訊息
-            alert("謝謝您的訊息，我們會儘快處理您的留言，謝謝！");
+            alert("您已成功上傳！");
         }
 
         document.getElementById("submitButton").addEventListener("click", getValues);
